@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="941.64465"
+   height="384.95819"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="why-is-caching-interesting.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="423.2071"
+     inkscape:cy="190.47568"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       id="grid2985"
+       type="xygrid"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="103.50215px"
+       originy="-714.5918px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path3788"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mendc"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mendc">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#de3833;fill-rule:evenodd;stroke:#de3833;stroke-width:0.625;stroke-linejoin:round"
+         id="path4754"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(103.50215,47.187817)">
+    <g
+       id="g4968"
+       inkscape:export-filename="/home/fabian/jboss-one-day-talk/reveal.js-2.5.0/why-is-caching-interesting.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:#de3833;fill-opacity:1;fill-rule:nonzero;stroke:#de3833;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mendc)"
+         d="m -90,212.36218 910,0"
+         id="path2987"
+         inkscape:connector-curvature="0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4770"
+         y="292.36218"
+         x="-80"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="292.36218"
+           x="-80"
+           id="tspan4772"
+           sodipodi:role="line">Less interesting</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4770-9"
+         y="292.36218"
+         x="600"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:28px"
+           y="292.36218"
+           x="600"
+           id="tspan4772-0"
+           sodipodi:role="line">More interesting</tspan></text>
+      <g
+         transform="translate(141.03223,4)"
+         id="g4898">
+        <path
+           style="fill:#f5b12c;stroke:#de3833;stroke-width:7.0999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 400,112.36218 0,-159.999997 280,0 0,159.999997 -110,0 0,30 20,0 -50,30 -50,-30 20,0 0,-30 z"
+           id="path4803-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccc" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="538.96777"
+           y="-11.637817"
+           id="text4795-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="538.96777"
+             y="-11.637817"
+             style="font-size:28px;text-align:center;text-anchor:middle"
+             id="tspan4842">Cluster-Aware</tspan><tspan
+             sodipodi:role="line"
+             x="538.96777"
+             y="23.362183"
+             style="font-size:28px;text-align:center;text-anchor:middle"
+             id="tspan4848">In-Memory</tspan><tspan
+             sodipodi:role="line"
+             x="538.96777"
+             y="58.362183"
+             style="font-size:28px;text-align:center;text-anchor:middle"
+             id="tspan4850">Data Management</tspan><tspan
+             sodipodi:role="line"
+             x="538.96777"
+             y="93.362183"
+             style="font-size:28px;text-align:center;text-anchor:middle"
+             id="tspan4852">Systems</tspan><tspan
+             sodipodi:role="line"
+             x="538.96777"
+             y="128.36218"
+             style="font-size:28px;text-align:center;text-anchor:middle"
+             id="tspan4844" /></text>
+      </g>
+      <g
+         transform="translate(-113.05862,14)"
+         id="g4890">
+        <path
+           style="fill:#f5b12c;stroke:#de3833;stroke-width:7.0999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 13.106473,112.36218 0,-159.999997 280.000007,0 0,159.999997 -110,0 0,30 20,0 -50,30 -50,-30 20,0 0,-30 z"
+           id="path4803-0-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccc" />
+        <g
+           id="g4872">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4795"
+             y="-11.637817"
+             x="153.05862"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               style="font-size:28px;text-align:center;text-anchor:middle"
+               y="-11.637817"
+               x="153.05862"
+               id="tspan4797"
+               sodipodi:role="line">Local Caches</tspan><tspan
+               style="font-size:28px;text-align:center;text-anchor:middle"
+               id="tspan4799"
+               y="23.362183"
+               x="153.05862"
+               sodipodi:role="line">in Hardware and</tspan><tspan
+               style="font-size:28px;text-align:center;text-anchor:middle"
+               id="tspan4801"
+               y="58.362183"
+               x="153.05862"
+               sodipodi:role="line">Software</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="translate(106,-10)"
+         id="g4913">
+        <path
+           sodipodi:type="star"
+           style="fill:#f5b12c;fill-opacity:1;fill-rule:nonzero;stroke:#de3833;stroke-width:7.0999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4907"
+           sodipodi:sides="5"
+           sodipodi:cx="300"
+           sodipodi:cy="432.36218"
+           sodipodi:r1="119.09951"
+           sodipodi:r2="58.309521"
+           sodipodi:arg1="0.56304938"
+           sodipodi:arg2="1.1913679"
+           inkscape:flatsided="false"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 400.71428,495.93361 -79.11704,-9.40908 -50.93483,61.26728 -15.49994,-78.15235 -74.00838,-29.50927 69.53755,-38.89172 5.19514,-79.50502 58.47651,54.11594 77.21916,-19.62753 -33.39709,72.33721 z"
+           inkscape:transform-center-x="8.0844073"
+           inkscape:transform-center-y="3.1635632"
+           transform="translate(79.285714,-203.57143)" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="310"
+           y="242.36218"
+           id="text4909"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4911"
+             x="310"
+             y="242.36218">Cloud</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
