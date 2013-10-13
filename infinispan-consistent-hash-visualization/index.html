@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Infinispan Consistent Hash Visualization</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="main">
+    <div id="inner">
+        <h1>Infinispan Consistent Hash Visualization</h1>
+
+        <form>
+            <label for="url">Jolokia URL:</label>
+            <input type="text" id="url" value="http://localhost:8001/jolokia"/>
+            <button type="submit">Load</button>
+        </form>
+        <div id="summary"></div>
+        <div id="nodes"></div>
+    </div>
+</div>
+<script type="text/html" id="node-tile-template">
+    <div class="node" id="{{node-name}}">
+        <div class="node-name">
+            <span>{{node-name}}</span>
+            <div class="checkbox-div" style="background-color: {{node-color}}">
+                <input type="checkbox"/>
+            </div>
+        </div>
+        <div class="node-summary">
+            <span>total: {{total}}</span><br/>
+            <span>primary: {{primary}}</span><br/>
+            <span>secondary: {{secondary}}</span>
+        </div>
+        <div class="node-content">
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="js/3rdparty/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/3rdparty/mustache.js"></script>
+<script type="text/javascript" src="js/infinispan-consistent-hash-visualization.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* http://stackoverflow.com/questions/15857276/css-center-responsive-div */
+@media (min-width: 280px) {
+    #inner{
+        width: 254px;
+    }
+}
+
+@media (min-width: 320px) {
+    #inner{
+        width: 254px;
+    }
+}
+
+@media (min-width: 480px) {
+    #inner{
+        width: 254px;
+    }
+}
+
+@media (min-width: 640px) {
+    #inner{
+        width: 508px;
+    }
+}
+
+@media (min-width: 800px) {
+    #inner{
+        /*width: 780px;*/
+        width: 762px; /* width: 240 + margin: 2x5 + border: 2x2 = 254; 254x3 = 762; */
+    }
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#main, #inner {
+    /*height: 100%;*/
+}
+
+body {
+    color: #111111;
+    background: #eeeeee;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#main{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+
+#inner{
+    padding: 5px;
+    border: 1px solid #111111;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #888888;
+    /*font-size: 0px;*/
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+#inner h1, #inner form {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button {
+    font-size: 1em;
+}
+input {
+    font-size: 1em;
+    width: 66%;
+}
+
+#nodes {
+    padding-top: 0.5em;
+}
+
+div.node {
+    margin: 5px;
+    padding: 0;
+    /*border: 5px solid red;*/
+    border:1px solid #111111;
+    border-radius:5px;
+    height: 303px;
+    width: 240px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+div.node-name {
+    text-align: center;
+    /*background: lightblue;*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #111111;
+}
+
+div.node-summary {
+    padding-top: 4px;
+    margin-bottom: 4px;
+    height: 59px;
+    background: lightgray;
+    border-bottom: 1px solid #111111;
+}
+
+div.node-content {
+    /*height: 100%;*/
+    height: 205px;
+    overflow-y: scroll;
+}
+
+div.node-content, div.key {
+    width: 100%;
+}
+
+div.highlight {
+    font-weight: bold;
+    background: lightgray;
+}
+
+/*div.node {*/
+    /*background: red;*/
+    /*width: 200px;*/
+    /*margin: 3px;*/
+    /*border:2px solid black;*/
+    /*border-radius:25px;*/
+/*}*/
+
+div.node-name {
+    background: lightblue;
+}
+
+div.node1 {
+    background: bisque;
+}
+
+div.node2 {
+    background: darkseagreen;
+}
+
+div.node3 {
+    background: gold;
+}
+
+div.node4 {
+    background: greenyellow;
+}
+
+div.node5 {
+    background: lightpink;
+}
+
