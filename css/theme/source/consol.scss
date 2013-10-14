@@ -16,18 +16,28 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
+@import url(http://fonts.googleapis.com/css?family=Bevan);
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: Arial, Helvetica, sans-serif;
 $mainColor: #333;
-$headingFont: 'Quicksand', sans-serif;
+$headingFont: 'Bevan', cursive;
 $headingColor: #333;
-$headingLetterSpacing: -0.08em;
 $headingTextShadow: none;
 $backgroundColor: #f7fbfc;
 $linkColor: #3b759e;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #134674;
+
+$headingTextTransform: none;
+
+.active-section {
+    background: #F5B12C;
+}
+
+table.small * {
+    font-size: 90%;
+}
 
 // Fix links so they are not cut off
 .reveal a:not(.image) {

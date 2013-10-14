@@ -56,11 +56,11 @@
     </div>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
-    <h2>Why is Caching Interesting?</h2>
+    <h3>Why is Caching Interesting?</h3>
     <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="why-is-caching-interesting.png"/>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
-    <h1>Why Infinispan?</h1>
+    <h3>Why Infinispan?</h3>
     <ul>
         <li>Easy to use
         <li>Standards complient (soon)
@@ -68,7 +68,7 @@
     </ul>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
-    <h1>Content</h1>
+    <h3>Content</h3>
     <ul>
         <li>Easy to use
             <ul>
@@ -86,11 +86,11 @@
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
     <section>
-        <h1>Content</h1>
+        <h3>Content</h3>
         <ul>
             <li>Easy to use
                 <ul>
-                    <li style="background: red">We will build a full JEE example in 15 minutes
+                    <li class="active-section">We will build a full JEE example in 15 minutes
                 </ul>
             <li>Standards complient (soon)
                 <ul>
@@ -103,7 +103,7 @@
         </ul>
     </section>
     <section>
-        <h1>Typical Applications of Infinispan</h1>
+        <h3>Typical Applications of Infinispan</h3>
         <ul>
             <li>Cache for databases
             <li>Cache for other things
@@ -116,7 +116,7 @@
         </ul>
     </section>
     <section>
-        <h1>JEE Application Example</h1>
+        <h3>JEE Application Example</h3>
         <ul>
             <li>JBoss Application Server
             <li>Persistence layer with JPA and Hibernate
@@ -124,19 +124,20 @@
         </ul>
     </section>
     <section>
-        <h1>What is First and Second Level caching in Hibernate?</h1>
+        <h3>What is First and Second Level caching in Hibernate?</h3>
     </section>
     <section>
-        <h2>First-level cache</h2>
+        <h3>First-level cache</h3>
         Associates with the <b>Session</b> object.
         Reduces the number of SQL queries it needs to generate within a given transaction.
         Hibernate uses this cache by default.
-        <h2>Second-level cache</h2>
+        <br/><br/>
+        <h3>Second-level cache</h3>
         Associates with the <b>Session Factory</b> object.
         Scope is the entire application, not just a single transaction.
     </section>
     <section>
-        <h2>Real-Live Example in Three Steps</h2>
+        <h3>Real-Live Example in Three Steps</h3>
         <ol>
             <li>Example Project from Maven Archetype
             <li>Enable Database Logging
@@ -144,7 +145,7 @@
         </ol>
     </section>
     <section>
-        <h2>Maven Archetype</h2>
+        <h3>Maven Archetype</h3>
                                     <pre>
 <code>
     mvn archetype:generate \
@@ -164,15 +165,15 @@
 </pre>
     </section>
     <section>
-        <h2>Example Application</h2>
+        <h3>Example Application</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="example-application.png"/>
     </section>
     <section>
-        <h2>Example Application</h2>
+        <h3>Example Application</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="example-application-rest-interface.png"/>
     </section>
     <section>
-        <h2>Enable Database Logging</h2>
+        <h3>Enable Database Logging</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="edit-import-sql.png"/>
 <pre>
 <code>
@@ -181,7 +182,7 @@
 </pre>
     </section>
     <section>
-        <h2>Enable 2nd Level Cache</h2>
+        <h3>Enable 2nd Level Cache</h3>
         In <code>persistence.xml</code>:
 <pre>
 <code>
@@ -193,12 +194,8 @@
 </pre>
     </section>
     <section>
-        <h2>Cache Modes</h2>
-        <table border="1">
-            <tr>
-                <th align="left" valign="bottom" id="r1c1-t3">Cache Mode Setting</th>
-                <th align="left" valign="bottom" id="r1c2-t3">Description</th>
-            </tr>
+        <h3>Cache Modes</h3>
+        <table class="small" border="1">
             <tr>
                 <td><code>ALL</code></td>
                 <td>All entity data is stored in the second-level cache for this persistence unit.</td>
@@ -208,13 +205,13 @@
                 <td>No data is cached in the persistence unit. The persistence provider must not cache any data.</td>
             </tr>
             <tr>
-                <td><code>ENABLE_SELECTIVE</code></td>
+                <td style="padding-right: 1em"><code>ENABLE_SELECTIVE</code></td>
                 <td>Enable caching for entities that have been explicitly set with the <code>@Cacheable</code>
                     annotation.
                 </td>
             </tr>
             <tr>
-                <td><code>DISABLE_SELECTIVE</code></td>
+                <td style="padding-right: 1em"><code>DISABLE_SELECTIVE</code></td>
                 <td>Enable caching for all entities except those that have been explicitly set with the <code>@Cacheable(false)</code>
                     annotation.
                 </td>
@@ -228,11 +225,11 @@
         </table>
     </section>
     <section>
-        <h2>JBoss Management Console</h2>
+        <h3>JBoss Management Console</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="jboss-management-console.png"/>
     </section>
     <section>
-        <h2>Infinispan's Clustering Modes</h2>
+        <h3>Infinispan's Clustering Modes</h3>
         <ul>
             <li>Invalidation: cluster-aware "local" caches that are able to invalidate entries if entries are modified
                 elsewhere in the cluster.
@@ -272,7 +269,7 @@
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
     <section>
-        <h1>Content</h1>
+        <h3>Content</h3>
         <ul>
             <li>Easy to use
                 <ul>
@@ -280,7 +277,7 @@
                 </ul>
             <li>Standards complient (soon)
                 <ul>
-                    <li style="background: red">JCACHE (JSR 107) Intro
+                    <li class="active-section">JCACHE (JSR 107) Intro
                 </ul>
             <li>Powerfull under the hood
                 <ul>
@@ -293,7 +290,7 @@
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="jsr107.png"/>
     </section>
     <section>
-        <h1>JSR 107 Core Interfaces</h1>
+        <h3>JSR 107 Core Interfaces</h3>
         <ul>
             <li><span class="code">CachingProvider:</span> Configure CacheManagers (CDI Provider?)
             <li><span class="code">CacheManager:</span> Acquire Cache
@@ -303,7 +300,7 @@
         </ul>
     </section>
     <section>
-        <h1>Concurrent Map</h1>
+        <h3>Concurrent Map</h3>
         The following code is not thread safe
 <pre>
 <code>
@@ -320,7 +317,7 @@ public void incrementUnsafe(String user) {
 </pre>
     </section>
     <section>
-        <h1>Concurrent Map</h1>
+        <h3>Concurrent Map</h3>
         Synchronized only works within single VM.
 <pre>
 <code>
@@ -337,7 +334,7 @@ public synchronized void incrementThreadSafe(String user) {
 </pre>
     </section>
     <section>
-        <h1>Concurrent Map</h1>
+        <h3>Concurrent Map</h3>
         Atomic Compare and Swap
         <img style="position: absolute; z-index: 1; background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="requires-sync.png"/>
 <pre>
@@ -356,14 +353,14 @@ public void incrementAtomic(String user) {
 </pre>
     </section>
     <section>
-        <h1>Concurrent Map</h1>
+        <h3>Concurrent Map</h3>
         CAS operations can be understood as a optimistic locking approach.
         Alternatively, you caches provide pessimistic lock / mutate / unlock.
     </section>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
     <section>
-        <h1>Content</h1>
+        <h3>Content</h3>
         <ul>
             <li>Easy to use
                 <ul>
@@ -375,7 +372,7 @@ public void incrementAtomic(String user) {
                 </ul>
             <li>Powerfull under the hood
                 <ul>
-                    <li style="background: red">Dive into Infinispan's distribution mode
+                    <li class="active-section">Dive into Infinispan's distribution mode
                 </ul>
         </ul>
     </section>
@@ -386,7 +383,7 @@ public void incrementAtomic(String user) {
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distributed-hash-with-backup-on-neighbor.png"/>
     </section>
     <section>
-        <h1>Distributed Hash with Back-up on "Neighbor to the Right"</h1>
+        <h3>Distributed Hash with Back-up on "Neighbor to the Right"</h3>
         Problem:
         <ul>
             <li>Immediatly after Node failure: Back-up node may become overloaded, because gets all keys from failing neighbor.
@@ -397,7 +394,7 @@ public void incrementAtomic(String user) {
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distributed-hash-with-backup-hash.png"/>
     </section>
     <section>
-        <h1>Distributed Hash with Back-up on "Neighbor to the Right"</h1>
+        <h3>Distributed Hash with Back-up on "Neighbor to the Right"</h3>
         Problem:
         <ul>
             <li><del>Immediatly after Node failure: Back-up node may become overloaded, because gets all keys from failing neighbor.</del>
@@ -408,7 +405,7 @@ public void incrementAtomic(String user) {
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="consistent-hash.png"/>
     </section>
     <section>
-        <h1>Consistent Hashing</h1>
+        <h3>Consistent Hashing</h3>
         <ul>
         <li>On Node Failure: Load is distributed on #segments / #nodes nodes.
         <li>Rebalance: Only #segments / #nodes segments need to be remapped.
@@ -421,11 +418,11 @@ public void incrementAtomic(String user) {
         </ul>
     </section>
     <section data-background="consol-background-demo.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
-        <h1>Demo</h1>
+        <h3>Demo</h3>
         <small><a href="infinispan-consistent-hash-visualization/index.html">infinispan-consistent-hash-visualization/index.html</a></small>
     </section>
     <section>
-        <h1>Demo</h1>
+        <h3>Demo</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distribution-mode-visualization-demo.png"/>
     </section>
     <section>
@@ -439,8 +436,9 @@ public void incrementAtomic(String user) {
     </section>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
-    <h1>Summary</h1>
+    <h3>Summary</h3>
     Infinispan is...
+    <p/>
     <ul>
         <li>Easy to use
         <li>Standards complient (soon)

@@ -1,10 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Bevan);
 /**
  * Sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+.active-section {
+  background: #F5B12C; }
+
+table.small * {
+  font-size: 90%; }
+
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
@@ -22,7 +29,7 @@ body {
   background-color: #f7fbfc; }
 
 .reveal {
-  font-family: "Open Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -44,10 +51,10 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Bevan", cursive;
   line-height: 0.9em;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
