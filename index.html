@@ -260,7 +260,7 @@
             <li>Inexpensive to implement atomic operations
             <li>Different strategies with joining andeaving nodes.
         </ul>
-        <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distribution-mode.png"/>
+        <img style="padding-top: 1em; background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distribution-mode.png"/>
     </section>
     <section>
         <h3>Client-Server Mode</h3>
@@ -292,7 +292,7 @@
     <section>
         <h3>JSR 107 Core Interfaces</h3>
         <ul>
-            <li><span class="code">CachingProvider:</span> Configure CacheManagers (CDI Provider?)
+            <li><span class="code">CachingProvider:</span> Configure CacheManagers
             <li><span class="code">CacheManager:</span> Acquire Cache
             <li><span class="code">Cache:</span> Map-like data structure + eviction + backed by distributied topology
             <li><span class="code">Entry:</span> Key-value pair
@@ -354,8 +354,10 @@ public void incrementAtomic(String user) {
     </section>
     <section>
         <h3>Concurrent Map</h3>
-        CAS operations can be understood as a optimistic locking approach.
-        Alternatively, you caches provide pessimistic lock / mutate / unlock.
+        CAS operations can be understood<br/>
+        as an optimistic locking approach.<p/>
+        Alternatively, you caches provide<br/>
+        pessimistic lock / mutate / unlock.
     </section>
 </section>
 <section data-background="consol-background.jpg" data-background-size="100% 100%" data-background-color="#FFFFFF">
@@ -377,9 +379,11 @@ public void incrementAtomic(String user) {
         </ul>
     </section>
     <section>
+        <h3>Simple Distributed Hash</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distributed-hash-simple.png"/>
     </section>
     <section>
+        <h3>Distributed Hash with Back-up on "Neighbor to the Right"</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distributed-hash-with-backup-on-neighbor.png"/>
     </section>
     <section>
@@ -391,10 +395,11 @@ public void incrementAtomic(String user) {
         </ul>
     </section>
     <section>
+        <h3>Distributed Hash with Secondary Back-up Hash</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distributed-hash-with-backup-hash.png"/>
     </section>
     <section>
-        <h3>Distributed Hash with Back-up on "Neighbor to the Right"</h3>
+        <h3>Distributed Hash with Secondary Back-up Hash</h3>
         Problem:
         <ul>
             <li><del>Immediatly after Node failure: Back-up node may become overloaded, because gets all keys from failing neighbor.</del>
@@ -402,6 +407,7 @@ public void incrementAtomic(String user) {
         </ul>
     </section>
     <section>
+        <h3>Consistent Hashing</h3>
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="consistent-hash.png"/>
     </section>
     <section>
@@ -426,6 +432,7 @@ public void incrementAtomic(String user) {
         <img style="background: rgba(255, 255, 255, 0); border: 0; box-shadow: 0 0 0 0" src="distribution-mode-visualization-demo.png"/>
     </section>
     <section>
+        <h3>Demo</h3>
         <ul>
         <li>Num Keys: 600, Num Segments: 6.
         <li>Keys per segment: ca 100

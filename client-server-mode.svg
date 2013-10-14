@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="745.64282"
-   height="390"
+   height="430"
    id="svg5013"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -437,12 +437,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(165.64285,-202.36218)"
+     transform="translate(165.64285,-162.36218)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
@@ -450,9 +450,9 @@
        style="fill:#bdcdd4;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect9694"
        width="330"
-       height="390"
+       height="430"
        x="249.87305"
-       y="183.5"
+       y="143.5"
        transform="translate(0.12695,18.862178)"
        ry="0" />
     <path
@@ -733,5 +733,29 @@
        d="m 170,461.64789 60,0"
        style="fill:#de3833;stroke:#de3833;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Sstartr);marker-end:url(#Arrow1Sendr)"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="260"
+       y="192.36218"
+       id="text3085"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3087"
+         x="260"
+         y="192.36218"
+         style="font-size:28px">Server Cluster</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-160"
+       y="192.36218"
+       id="text3085-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3087-4"
+         x="-160"
+         y="192.36218"
+         style="font-size:28px">Infinispan Clients</tspan></text>
   </g>
 </svg>

@@ -11,13 +11,25 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="458.93503"
-   height="375"
+   height="295"
    id="svg5013"
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="example-application-rest-interface.svg">
   <defs
-     id="defs5015" />
+     id="defs5015">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2989">
+      <rect
+         style="fill:#f5b12c;fill-opacity:1;fill-rule:nonzero;stroke:#de3833;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect2991"
+         width="460"
+         height="295"
+         x="240"
+         y="32.362183" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,7 +39,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="109.2996"
-     inkscape:cy="228.13639"
+     inkscape:cy="148.13639"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -51,7 +63,7 @@
        enabled="true"
        snapvisiblegridlinesonly="true"
        originx="-240px"
-       originy="-645px" />
+       originy="-725px" />
   </sodipodi:namedview>
   <metadata
      id="metadata5018">
@@ -73,11 +85,12 @@
     <image
        sodipodi:absref="/home/fabian/workspace/reveal.js/screenshot-example-application-rest-interface.png"
        xlink:href="screenshot-example-application-rest-interface.png"
-       width="458.93503"
-       height="375"
-       id="image5779"
+       clip-path="url(#clipPath2989)"
+       y="32.362183"
        x="240"
-       y="32.362183" />
+       id="image5779"
+       height="375"
+       width="458.93503" />
     <path
        style="fill:#f5b12c;stroke:#de3833;stroke-width:7;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 430,267.36218 0,-35 10,0 L 415.00402,213.20874 390,232.36218 l 10,0 0,35 z"
