@@ -1,11 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
-@import url(http://fonts.googleapis.com/css?family=Bevan);
 /**
- * Sky theme for reveal.js.
- *
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * ConSol* Scheme for the JBoss One Day Talk presentation 2013
  */
+@font-face {
+  font-family: 'Bevan';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bevan"), url(../../fonts/Bevan.woff) format("woff"), url(../../fonts/Bevan.tiff) format("truetype"); }
+
 .active-section {
   background: #F5B12C; }
 
