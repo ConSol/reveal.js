@@ -1,0 +1,17 @@
+<infinispan xsi:schemaLocation="urn:infinispan:config:6.0 infinispan-config-6.0.xsd"
+            xmlns="urn:infinispan:config:6.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- infinispan in local mode (no cluster) -->
+    <global>
+        <transport nodeName="node2" clusterName="cluster"/>
+        <globalJmxStatistics enabled="true"/>
+    </global>
+    <default>
+        <clustering mode="distribution">
+            <async/>
+            <hash numSegments="6"/>
+        </clustering>
+        <jmxStatistics enabled="true"/>
+        <eviction maxEntries="1000" strategy="LRU"/>
+    </default>
+</infinispan>
