@@ -294,10 +294,39 @@
         <ul>
             <li><span class="code">CachingProvider:</span> Configure CacheManagers
             <li><span class="code">CacheManager:</span> Acquire Cache
-            <li><span class="code">Cache:</span> Map-like data structure + eviction + backed by distributied topology
+            <li><span class="code">Cache:</span> ConcurrentMap + eviction + backed by distributied topology
             <li><span class="code">Entry:</span> Key-value pair
             <li><span class="code">Expiry</span>
         </ul>
+    </section>
+    <section>
+        <h3>JSR 107 Timetable 2013</h3>
+        <center>
+        <table class="small" border="1">
+            <tr class="head">
+                <th>Deliverable</th><th>Start</th><th>Finish</th>
+            </tr>
+            <tr>
+                <td>Public Review Ballot</td><td>27 Aug</td><td>9 Sep</td>
+            </tr>
+            <tr>
+                <td>Proposed Final Draft</td><td>&nbsp;</td><td>30 Sep</td>
+            </tr>
+            <tr>
+                <td>Reference Implementation (<a href="https://github.com/jsr107/RI">https://github.com/jsr107/RI</a>),<br/>Technology Compatibility Kit</td><td>&nbsp;</td><td>31 Oct</td>
+            </tr>
+            <tr>
+                <td>Appeal Ballot (7 days)</td><td>31 Oct</td><td>7 Nov</td>
+            </tr>
+            <tr>
+                <td>Final Approval Ballot</td><td>14 Nov</td><td>28 Nov</td>
+            </tr>
+            <tr>
+                <td>Final Release </td><td>28 Nov</td><td>12 Dec</td>
+            </tr>
+        </table>
+        <small>Source: JavaOne 2013</small>
+        </center>
     </section>
     <section>
         <h3>Concurrent Map</h3>
@@ -356,7 +385,7 @@ public void incrementAtomic(String user) {
         <h3>Concurrent Map</h3>
         CAS operations can be understood<br/>
         as an optimistic locking approach.<p/>
-        Alternatively, you caches provide<br/>
+        Alternatively, caches provide<br/>
         pessimistic lock / mutate / unlock.
     </section>
 </section>

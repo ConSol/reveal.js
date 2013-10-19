@@ -13,6 +13,13 @@
 table.small * {
   font-size: 90%; }
 
+table tr.head th {
+  background: #F5B12C;
+  font-weight: bold; }
+
+table tr:nth-child(2n+1) {
+  background: #DDDDDD; }
+
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
