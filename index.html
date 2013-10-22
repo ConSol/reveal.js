@@ -376,7 +376,7 @@ public void incrementAtomic(String user) {
     do {
         current = cache.get(user);
     }
-    while (cache.replace(user, current, current + 1));
+    while (!cache.replace(user, current, current + 1));
 }
 </code>
 </pre>
