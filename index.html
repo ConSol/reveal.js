@@ -294,7 +294,7 @@
         <ul>
             <li><span class="code">CachingProvider:</span> Configure CacheManagers
             <li><span class="code">CacheManager:</span> Acquire Cache
-            <li><span class="code">Cache:</span> ConcurrentMap + eviction + backed by distributied topology
+            <li><span class="code">Cache:</span> ConcurrentMap + eviction + backed by distributed topology
             <li><span class="code">Entry:</span> Key-value pair
             <li><span class="code">Expiry</span>
         </ul>
@@ -419,7 +419,7 @@ public void incrementAtomic(String user) {
         <h3>Distributed Hash with Back-up on "Neighbor to the Right"</h3>
         Problem:
         <ul>
-            <li>Immediatly after Node failure: Back-up node may become overloaded, because gets all keys from failing neighbor.
+            <li>Immediately after Node failure: Back-up node may become overloaded, because it gets all keys from failing neighbor.
             <li>Rebalance: Nearly all keys need to be remapped when # nodes decreases / increases.
         </ul>
     </section>
@@ -431,7 +431,7 @@ public void incrementAtomic(String user) {
         <h3>Distributed Hash with Secondary Back-up Hash</h3>
         Problem:
         <ul>
-            <li><del>Immediatly after Node failure: Back-up node may become overloaded, because gets all keys from failing neighbor.</del>
+            <li><del>Immediately after Node failure: Back-up node may become overloaded, because it gets all keys from failing neighbor.</del>
             <li>Rebalance: Nearly all keys need to be remapped when # nodes decreases / increases.
         </ul>
     </section>
